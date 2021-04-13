@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(93, 25, 156);
+    color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.turns{
+    margin-top: 1rem;
+}
+.main-game{
+    position: relative;
+    margin-top: 4rem;
+    height: 80vh;
+    width: 80vh;
+    background-color: black;
+    border-radius: 50%; ;
+}
+.game{
+    height: 70vh;
+    width: 70vh;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 6%;
+    left: 6%;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.upper-btns,
+.lower-btns{
+    height : 50%;
+    width: 100%;
+    display: flex;
+    
+}
+
+.green,
+.red,
+.blue,
+.yellow{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    border: none;
+}
+.upper-btns button{
+    border-bottom: 5px solid black;
+    cursor: pointer;
+}
+.lower-btns button{
+    border-top: 5px solid black;
+    cursor: pointer;
+}
+.green,.yellow{
+    border-right: 5px solid black;
+}
+.red,
+.blue{
+    border-left: 5px solid black;
+}
+.green{
+    background: green;
+    font-size: 0px;
+}
+.red{
+    background: red;
+    font-size: 0;
+}
+.yellow{
+    background: yellow;
+    font-size : 0;
+}
+.blue{
+    background: blue;
+    font-size: 0px;
+}
+.green:hover{
+    background-color: rgb(96, 243, 108);
+}
+.red:hover{
+    background-color: crimson;
+}
+.blue:hover{
+    background-color:cyan;
+}
+.yellow:hover{
+    background-color: rgb(247, 247, 117);
+}
+.start-stop{
+    height: 35vh;
+    width: 35vh;
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    border-radius: 50%;
+    background: black;
+    color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    cursor: none;
+    z-index: 2;
+    padding: 5px;
+}
+
+.start,
+.stop{
+    padding: 0.8rem;
+    margin: 25px;
+    cursor: pointer;
+    pointer-events: all;
+    border: none;
+    background: none;
+    color: blanchedalmond;
+}
+.btn-0{
+    background-color: rgb(96, 243, 108);
+}
+.btn-1{
+    background-color: crimson;
+}
+.btn-3{
+    background-color:cyan;
+}
+.btn-2{
+    background-color: rgb(247, 247, 117);
+}
